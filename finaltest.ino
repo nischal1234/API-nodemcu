@@ -38,7 +38,8 @@ void loop() {
     if(WiFi.status()== WL_CONNECTED){
       HTTPClient http;
 //api_key=IBMMYSP7JQQWBHC6&field1=0
-      String serverPath = serverName + "?sensor1=HIGH"; //modify as per your requirement for data processing
+      int data;
+      String serverPath = serverName + "?sensor1"=+data; //modify as per your requirement for data processing
       Serial.println(serverPath);
       
       // Your Domain name with URL path or IP address with path
